@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Suraj Wadje — Full-Stack Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Atmospheric background layer -->
+<div class="bg-stack" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-orb a" id="orb-a"></div>
+  <div class="bg-orb b" id="orb-b"></div>
+  <div class="bg-orb c" id="orb-c"></div>
+  <div class="bg-noise"></div>
+</div>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-dot"></span>
+      <span>suraj</span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Work</a>
+      <a href="#skills">Stack</a>
+      <a href="#personal">Offline</a>
+      <a href="#contact">Say Hi</a>
+    </div>
+    <a href="#contact" class="nav-cta">
+      <span class="pulse"></span>
+      Open to chat
+    </a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="wrap hero" id="top">
+  <div class="hero-text">
+    <div class="hero-greeting">
+      <div class="hero-photo">
+        <img src="assets/avatar.png" alt="Suraj Wadje" />
+      </div>
+      <div class="hero-hi">
+        <span class="wave">👋</span>
+        <span>Hi, I'm Suraj</span>
+      </div>
+    </div>
+
+    <h1 class="hero-title">
+      I build software<br/>
+      I'd actually want<br/>
+      <span class="grad">to use.</span>
+    </h1>
+    <p class="hero-sub">
+      I'm a full-stack engineer based in <strong style="color:var(--fg)">Pune, India</strong>.
+      I spend my days designing Postgres schemas, writing TypeScript, and figuring out how to make
+      slow things fast. The rest of the time I'm probably hiking or building
+      <strong style="color:var(--fg)">inrok.in</strong>, my side project.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">
+        Say hello
+        <span>→</span>
+      </a>
+      <a href="#experience" class="btn btn-ghost">
+        Read my work
+      </a>
+    </div>
+
+    <div class="now-panel tilt" aria-label="What I'm up to right now">
+      <div class="now-head">
+        <span>// currently</span>
+        <span class="live">live</span>
+      </div>
+      <ul class="now-list">
+        <li>
+          <span class="key">building</span>
+          <span class="val"><strong>inrok.in</strong> — a cheaper alternative to ngrok; multi-tenant SaaS wrapping open-source zrok behind a commercial layer.</span>
+        </li>
+        <li>
+          <span class="key">working</span>
+          <span class="val">at <strong>PeopleBlox</strong> as SDE — architected and shipped the product end-to-end; led the 8-developer team from MVP to production.</span>
+        </li>
+        <li>
+          <span class="key">open to</span>
+          <span class="val">fully remote roles.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hero-canvas-wrap" id="hero-3d">
+    <div class="ring"></div>
+    <div class="ring r2"></div>
+    <div class="ring r3"></div>
+    <span class="label t">// hello.world</span>
+    <span class="label r">REGION · IN</span>
+    <span class="label b">STATUS · 200</span>
+    <span class="float-chip f1"><span class="icn"></span>TypeScript</span>
+    <span class="float-chip f2"><span class="icn"></span>PostgreSQL</span>
+    <span class="float-chip f3"><span class="icn"></span>Node.js</span>
+  </div>
+</header>
+
+<!-- About -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">about me</div>
+        <h2 class="sec-title">The short <span class="grad">version.</span></h2>
+      </div>
+      <div class="sec-aside">
+        if we ever grab coffee, this is what I'd tell you.
+      </div>
+    </div>
+    <div class="about-grid">
+      <p class="about-lede">
+        I've been writing software for <em>four-ish years</em> and I still think the best part of the job is the moment a thing finally clicks.
+      </p>
+      <div class="about-detail">
+        <p>
+          I studied Computer Science and then Scientific Computing at <strong>Pune University</strong>, which is where I fell in love with parallel algorithms and the kind of math you can actually run on a machine.
+        </p>
+        <p>
+          I'm at <strong>PeopleBlox</strong>, where I architected the product end-to-end and led the 8-developer core engineering team from MVP to production — now live in <strong>10+ customer organizations including 2 enterprise customers</strong>. Before that I was at <strong>LitmusBlox</strong>, owning the Communication module and the Interview Workspace.
+        </p>
+        <p>
+          On the side, I'm building <strong>inrok.in</strong> — a cheaper ngrok alternative using open-source zrok with a custom multi-tenant SaaS layer on top.
+        </p>
+        <div class="detail-tags">
+          <span class="detail-tag">postgres nerd</span>
+          <span class="detail-tag">typescript fan</span>
+          <span class="detail-tag">recovering java dev</span>
+          <span class="detail-tag">async-first</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">where I've worked</div>
+        <h2 class="sec-title">A few <span class="grad">things I'm proud of.</span></h2>
+      </div>
+      <div class="sec-aside">
+        two companies, two products, lots of late nights.
+      </div>
+    </div>
+
+    <div class="timeline">
+      <article class="exp-card tilt">
+        <div class="exp-head">
+          <div>
+            <div class="exp-role">Software Development Engineer</div>
+            <div class="exp-co"><span class="co">PeopleBlox</span> <span class="at">·</span> B2B SaaS for employee competencies</div>
+          </div>
+          <div class="exp-meta">
+            <span class="date">Dec 2022 — Present</span>
+            <span>Pune · Hybrid</span>
+          </div>
+        </div>
+        <ul class="exp-points">
+          <li><strong>Built the core scoring engine</strong>, the product's primary differentiator: applied parallel algorithms for batch score computation and an incremental update strategy (subtract the old contribution, add the new — avoiding full recompute on every edit), cutting CPU usage ~90% on score updates.</li>
+          <li><strong>Designed the architecture and PostgreSQL schema</strong> end-to-end: modeled the multi-tenant org/employee/competency hierarchy across 79 tables with tenant isolation enforced at the service layer (rather than row-level) to keep schema and query paths simple.</li>
+          <li><strong>Led an 8-engineer team</strong> from MVP to production: ran code reviews, drove technical direction, and mentored junior devs through MVP shipping and post-launch iteration.</li>
+          <li><strong>Drove the technology selection</strong> for the new product: evaluated stacks across hiring availability, ecosystem maturity, and TypeScript-level type safety; landed on Node.js + TypeScript + Prisma + PostgreSQL.</li>
+          <li><strong>Built a Puppeteer + HTML-templates PDF report generator</strong> producing 2K+ branded reports/month across customer orgs, wired into transactional email and replacing manual reporting workflows.</li>
+          <li><strong>Adopted PgBoss</strong> (PostgreSQL-backed job queue) over Redis-based alternatives to avoid adding a separate infra dependency and preserve transactional consistency with the main DB; offloaded transactional email to async workers, decoupling outbound delivery from API response latency.</li>
+        </ul>
+      </article>
+
+      <article class="exp-card tilt">
+        <div class="exp-head">
+          <div>
+            <div class="exp-role">Full-Stack Developer</div>
+            <div class="exp-co"><span class="co">LitmusBlox</span> <span class="at">·</span> Candidate-engagement SaaS for recruiting</div>
+          </div>
+          <div class="exp-meta">
+            <span class="date">Nov 2020 — Dec 2022</span>
+            <span>Pune, India</span>
+          </div>
+        </div>
+        <p class="exp-desc">Owned the Communication module + Interview Workspace.</p>
+        <ul class="exp-points">
+          <li><strong>Built the WhatsApp communication engine</strong> on IMIConnect handling 1K+ daily transactional messages: template management, delivery receipts, retries, and opt-out flows.</li>
+          <li><strong>Designed and shipped the Interview Workspace</strong>: hiring-manager scheduling flow with ical4j-driven calendar invites delivered by email, and a day-of structured evaluation form filled in by the interviewer and surfaced to the recruiting team afterwards.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">my toolkit</div>
+        <h2 class="sec-title">Things I keep <span class="grad">reaching for.</span></h2>
+      </div>
+      <div class="sec-aside">
+        boring tech, mostly. it ships.
+      </div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card tilt">
+        <div class="skill-icn">{ }</div>
+        <div class="skill-name">Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Python</span>
+        </div>
+      </div>
+      <div class="skill-card tilt">
+        <div class="skill-icn">&lt;/&gt;</div>
+        <div class="skill-name">Frontend</div>
+        <div class="skill-tags">
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Next.js</span>
+          <span class="skill-tag">Redux</span>
+          <span class="skill-tag">RTK Query</span>
+          <span class="skill-tag">Material UI</span>
+          <span class="skill-tag">Socket.io</span>
+        </div>
+      </div>
+      <div class="skill-card tilt">
+        <div class="skill-icn">⚙</div>
+        <div class="skill-name">Backend</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Express</span>
+          <span class="skill-tag">Prisma</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">PgBoss</span>
+          <span class="skill-tag">Puppeteer</span>
+          <span class="skill-tag">Passport</span>
+          <span class="skill-tag">Zod</span>
+        </div>
+      </div>
+      <div class="skill-card tilt">
+        <div class="skill-icn">DB</div>
+        <div class="skill-name">Databases</div>
+        <div class="skill-tags">
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MongoDB</span>
+        </div>
+      </div>
+      <div class="skill-card tilt">
+        <div class="skill-icn">☁</div>
+        <div class="skill-name">Infra & Tooling</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">AWS (EC2)</span>
+          <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">Jenkins</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Git</span>
+        </div>
+      </div>
+      <div class="skill-card tilt">
+        <div class="skill-icn">✓</div>
+        <div class="skill-name">Testing</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Jest</span>
+          <span class="skill-tag">React Testing Library</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">side projects</div>
+        <h2 class="sec-title">Stuff I built <span class="grad">just because.</span></h2>
+      </div>
+      <div class="sec-aside">
+        no clients, no deadlines, just curiosity.
+      </div>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card feature tilt">
+        <div>
+          <div class="project-eyebrow">In development · SaaS</div>
+          <h3 class="project-title">inrok.in — a cheaper alternative to ngrok</h3>
+          <p class="project-blurb">
+            Multi-tenant SaaS wrapping open-source <strong style="color:var(--fg)">zrok</strong>
+            (OpenZiti zero-trust networking) behind a thin commercial layer: auth, RBAC,
+            per-tenant quotas, billing. Built with an <strong style="color:var(--fg)">AI-driven build loop</strong>
+            — Claude Code writes code, runs E2E tests, captures screenshots, and opens PRs with evidence;
+            I own architecture and review/merge gates.
+          </p>
+          <div class="project-stack">
+            <span>Next.js 15</span><span>TypeScript</span><span>PostgreSQL</span><span>Prisma</span><span>zrok</span><span>OpenZiti</span>
+          </div>
+        </div>
+        <a href="https://inrok.in" class="project-cta">
+          Visit inrok.in <span class="arrow">↗</span>
+        </a>
+      </article>
+
+      <article class="project-card tilt">
+        <div>
+          <div class="project-eyebrow">Algorithms · university project</div>
+          <h3 class="project-title" style="font-size:24px">AMPD — Assignment Manager with Plagiarism Detection</h3>
+          <p class="project-blurb">
+            Platform for teachers to manage assignments and detect submission plagiarism.
+            Implemented string-similarity scoring via <strong style="color:var(--fg)">Greedy String Tiling</strong>
+            and <strong style="color:var(--fg)">Running Karp-Rabin</strong> — Java backend with a JS/CSS front-end.
+          </p>
+          <div class="project-stack">
+            <span>Java</span><span>JavaScript</span><span>CSS</span><span>Greedy String Tiling</span><span>Karp-Rabin</span>
+          </div>
+        </div>
+        <a href="#" class="project-cta">
+          View on GitHub <span class="arrow">↗</span>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">school</div>
+        <h2 class="sec-title">Where I learned <span class="grad">to think in loops.</span></h2>
+      </div>
+    </div>
+    <div class="edu-row">
+      <div class="edu-card tilt">
+        <div class="edu-degree">M.Sc. Scientific Computing</div>
+        <div class="edu-school">Pune University</div>
+        <div class="edu-meta">
+          <span>2023</span>
+          <span class="pip"></span>
+          <span>Coursework focus</span>
+        </div>
+        <div class="edu-courses">
+          <span>Parallel Grid Computing</span>
+          <span>Linear Algebra</span>
+          <span>Combinatorial Analysis</span>
+        </div>
+      </div>
+      <div class="edu-card tilt">
+        <div class="edu-degree">B.Sc. Computer Science</div>
+        <div class="edu-school">Pune University</div>
+        <div class="edu-meta">
+          <span>2017 — 2020</span>
+          <span class="pip"></span>
+          <span>Undergraduate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Outside of code -->
+<section id="personal">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">offline</div>
+        <h2 class="sec-title">When I'm not <span class="grad">at a terminal.</span></h2>
+      </div>
+      <div class="sec-aside">
+        the things that keep me sane.
+      </div>
+    </div>
+    <div class="personal-grid">
+      <div class="personal-card tilt">
+        <div>
+          <div class="personal-kicker">on a trail</div>
+          <div class="personal-title">Western Ghats hiker</div>
+        </div>
+        <p class="personal-body">
+          Most Saturdays you'll find me somewhere in the Sahyadris —
+          monsoon-season fort treks are the best debugging therapy I've found.
+        </p>
+      </div>
+    </div>
+
+    <div class="quote-block">
+      <span class="quote-mark">“</span>
+      <p class="quote-text">
+        I'd rather ship a simple thing that works than an elegant thing that almost does.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact wrap" id="contact">
+  <div class="contact-eyebrow">say hi</div>
+  <h2 class="contact-headline">
+    Let's <span class="grad">talk shop.</span>
+  </h2>
+  <p class="contact-sub">
+    Whether it's a job, a side project, or you just want to argue about whether Postgres can do everything
+    (it usually can) — my inbox is open.
+  </p>
+  <a href="mailto:suraj14wadje@gmail.com" class="contact-email">
+    <span class="copy">drop me a line</span>
+    suraj14wadje@gmail.com
+    <span>→</span>
+  </a>
+  <div class="socials">
+    <a href="#" class="social-btn">LinkedIn ↗</a>
+    <a href="#" class="social-btn">GitHub ↗</a>
+    <a href="tel:+919421126032" class="social-btn">+91 94211 26032</a>
+  </div>
+  <div class="foot">
+    <span>made in pune · © 2026 suraj wadje</span>
+    <span>last updated this week — i promise</span>
+  </div>
+</section>
+
+<!-- Three.js for hero scene -->
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script src="hero-3d.js"></script>
+
+<!-- Interactions: card tilt, scroll reveal, orb parallax -->
+<script src="interactions.js"></script>
+
+</body>
+</html>
